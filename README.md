@@ -1,9 +1,9 @@
 # DB-Individual-Assignments
 
-By: Henok Gelaneh
-ID: ATR/7217/10
-Section: IT 
-Departmen: ITSC
+* By: Henok Gelaneh
+* ID: ATR/7217/10
+* Section: IT 
+* Departmen: ITSC
 
 Individual Assignemnt Papers:
 ```
