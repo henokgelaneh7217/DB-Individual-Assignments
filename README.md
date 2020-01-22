@@ -15,3 +15,5 @@ Individual Assignemnt Papers:
 6. Explain the difference between RDF, XML, and Ontology
 
 ```
+
+* All papers are compiled into "All in One" PDF file.
