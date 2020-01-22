@@ -13,6 +13,7 @@ Individual Assignemnt Papers:
 4. Explain the 3 data allocation models 
 5. The 4 JDBC Drivers
 6. Explain the difference between RDF, XML, and Ontology
+7. Database Objects - Optional?
 
 ```
 
