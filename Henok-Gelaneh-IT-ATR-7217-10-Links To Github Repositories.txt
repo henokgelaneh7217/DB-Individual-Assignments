@@ -1,0 +1,93 @@
+DB Individual Assignments
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Papers:
+Link : https://github.com/henokgelaneh7217/DB-Individual-Assignments.git
+
+Ruby On Rails CRUD:
+Link : https://github.com/henokgelaneh7217/RubyONRailsCRUD.git
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+By: Henok Gelaneh
+ID: ATR/7217/10
+Section: IT
+Departmen: ITSC
+
+Individual Assignemnt Papers:
+
+1. Relational Algebra to Relational Calculus
+2. Conjunctive Normal Form vs Disjunctive Normal Form
+3. Component Object Model (COM) and it's relation with OLE DB
+4. Explain the 3 data allocation models 
+5. The 4 JDBC Drivers
+6. Explain the difference between RDF, XML, and Ontology
+7. Database Objects - Optional?
+
+All papers are compiled into "All in One" PDF file.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ruby On Rails CRUD
+
+By: Henok Gelaneh Id: ATR/7217/10 Section: IT
+
+Required Installations:
+
+
+GET method to get all products from database
+
+  def index
+    @products = Product.all
+  end
+GET method to get a product by id
+ def show
+   @product = Product.find(params[:id])
+ end
+
+ # GET method for the new product form
+ def new
+   @product = Product.new
+ end
+
+POST method for processing form data
+
+def create
+  @product = Product.new(product_params)
+  if @product.save
+    flash[:notice] = 'Product added!'
+    redirect_to root_path
+  else
+    flash[:error] = 'Failed to edit product!'
+    render :new
+  end
+end
+
+GET method for editing a product based on id
+
+def edit
+  @product = Product.find(params[:id])
+end
+PUT method for updating in database a product based on id
+  def update
+    @product = Product.find(params[:id])
+    if @product.update_attributes(product_params)
+      flash[:notice] = 'Product updated!'
+      redirect_to root_path
+    else
+      flash[:error] = 'Failed to edit product!'
+      render :edit
+    end
+  end
+
+DELETE method for deleting a product from database based on id
+
+ def destroy
+   @product = Product.find(params[:id])
+   if @product.delete
+     flash[:notice] = 'Product deleted!'
+     redirect_to root_path
+   else
+     flash[:error] = 'Failed to delete this product!'
+     render :destroy
+   end
+ end
+ 
